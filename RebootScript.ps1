@@ -24,3 +24,4 @@ $Button = "OK"
 # Show Message Box
 [System.Windows.MessageBox]::Show("$Body","$Title","$Button","$Icon")
 
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Undefined
