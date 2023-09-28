@@ -8,7 +8,7 @@ Add-Type -AssemblyName PresentationFramework
 $WMI = Get-WmiObject win32_operatingsystem
 $UpTime = (Get-Date) - ($WMI.ConvertToDateTime($WMI.LastBootUpTime))
 $UptimeDays = $Uptime.Days
-if ($UptimeDays -gt "7") {
+if ($UptimeDays -gt "1") {
 $Output = "$UptimeDays Days"
 } else {
 Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Undefined
